@@ -1,0 +1,86 @@
+
+<div class='panel panel-primary' style="text-align: center">
+	<div class='panel-heading'>
+		<h1>{{title}}</h1>
+	</div>
+</div>
+
+<div class='AboutMe' *ngFor='let  personal of aboutMe'>
+	
+	<button class = 'click' (click)='OnClickShowAboutMe($personal)'>Summary</button>
+	<br>
+	<br> <i *ngIf='showAboutMe'>{{personal.summary}}</i>
+</div>
+<br>
+
+<table class='center' (click)=OnClickShowSkills($ability)>
+	
+		<button class ='click'>Skills</button>
+	
+	<br>
+
+	<tr *ngFor='let ability of skills'>
+
+		<td *ngIf='showSkills'>{{ability.title}}</td>
+		<td *ngIf='showSkills'>{{ability.items}}</td>
+
+	</tr>
+
+</table>
+
+<button class = 'click'(click)='OnClickShowEducation($qualification)'>Education</button>
+<br>
+
+<br>
+
+<br>
+<div class="edu" *ngFor='let qualification of education'>
+	<br>
+
+	<div class='panel-body' *ngIf='showEducation'>
+
+
+		<i> <b>{{qualification.course}}</b></i><i><b> gpa </b>:{{qualification.gpa}}</i><br>
+			
+		<div class='relative'>
+			<i>{{qualification.school}}</i><br> <i> <b>Graduation
+					Year </b> : {{qualification.graduationYear}}
+			</i><br> <i> <b>Projects </b> : {{qualification.project}}
+			</i>
+		</div>
+
+	</div>
+
+</div>
+
+
+<button class = 'click' (click) = 'OnClickShowExperience($exp)'>Projects</button>
+<div class = 'panel1-body' *ngFor = 'let exp of experience'>
+
+
+</div>
+
+
+
+
+
+<button class = 'click'  (click)= 'OnClickShowAddress($add)'>Address</button>
+<div class ="cont" *ngFor = 'let add of address'>
+<div class = "panel2-body" *ngIf = 'showAddress'>
+<i >{{add.address}}</i>
+<i >{{add.city}}</i>
+<i >{{add.state}}</i>
+<i> {{add.postal}}</i>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

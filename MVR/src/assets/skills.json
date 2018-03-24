@@ -1,0 +1,57 @@
+[
+
+{
+title: "Languages",
+             items: ["JAVA",
+                 "C",
+                 "C++"]
+        },
+        
+         {
+             title: "Frameworks",
+             items: [
+                 "Spring Framwork",
+                 "Hibernate"]
+         },
+       
+        {
+           title: "SDLC Methodologies",
+             items: [
+                 "SCRUM",
+                 "WATERFALL"
+           ]
+        },
+        {
+              title: "Web Technologies",
+             items: [
+                 "HTML",
+                 "CSS",
+                 "ANGULAR 2",
+                 "JAVASCRIPT"
+           ]
+        },
+           {
+             title: "Development IDEs",
+             items: [
+                 "Net Beans",
+                 "Eclipse"]
+         },
+          {
+             title: "Database",
+             items: [
+                 "SQL",
+                 "MYSQL"
+            ]
+         },
+    
+         {
+             title: "Platforms",
+             items: [
+                 "Windows",
+                 "Unix",
+                 "Linux"
+             ]
+         }
+  
+         ];
+            
